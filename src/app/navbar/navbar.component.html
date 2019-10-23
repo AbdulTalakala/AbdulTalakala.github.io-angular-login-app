@@ -1,0 +1,10 @@
+<nav [style.background] = "backgroundColor" class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li routerLinkActive="active current"><a routerLink="/followers" [queryParams]="{'page':1,'orders':1}">Followers</a></li>
+                <li routerLinkActive="active current"><a routerLink="/posts">Posts</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
