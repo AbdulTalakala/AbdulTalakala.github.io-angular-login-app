@@ -64,15 +64,15 @@ import { AdminAuthGuard } from './services/admin-auth-guard.service';
     RouterModule.forRoot([
 
       {
-        path:'',
-        component:HomeComponent
+        path: '',
+        component: HomeComponent
       },
-      { 
-        path: 'admin', 
-        component:AdminComponent,
+      {
+        path: 'admin',
+        component: AdminComponent,
         canActivate: [AuthGuardService, AdminAuthGuard]
        },
-      { path: 'login', component:LoginComponent  },
+      { path: 'login', component: LoginComponent  },
       { path:  'no-access', component: NoAccessComponent },
       // {
       //   path: 'followers/:id/:username',

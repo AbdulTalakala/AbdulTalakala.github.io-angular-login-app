@@ -11,14 +11,11 @@ import { map } from 'rxjs/operators';
 
 
 
-@Injectable({
-  providedIn: 'root'
-})
-export class DataService { 
-    
-  constructor(private url: string,private http:Http) { 
-
-  }
+// @Injectable({
+//   providedIn: 'root'
+// })
+export class DataService {
+  constructor(private url: string, private http: Http) {}
 
   getAll(){
     return this.http.get(this.url).pipe(
